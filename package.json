@@ -1,0 +1,40 @@
+{
+	"name": "@user/package",
+	"version": "1.0.0",
+	"description": "A simple project",
+	"main": "./src/index.ts",
+	"scripts": {
+		"start": "npx parcel src/index.html",
+		"build": "npx parcel build src/index.html",
+		"unused": "npx ts-prune",
+		"lint": "eslint './src/**/*.{ts,tsx}'",
+		"lint:fix": "eslint './src/**/*.{ts,tsx}' --fix",
+		"test:coverage-report": "jest --passWithNoTests --config=jest.config.js --collectCoverage --verbose",
+		"test:badges": "npx jest-coverage-badges --output './badges'",
+		"coverage": "npm run test:coverage-report; npm run test:badges",
+		"test": "jest --passWithNoTests --config=jest.config.js --verbose",
+		"cloc": "sh ./cloc.sh",
+		"tslint-check": "tslint-config-prettier-check ./tslint.json",
+		"history": "git log --pretty=format:\"%h%x09%an%x09%ad%x09%s\""
+	},
+	"author": "Jo Essin",
+	"dependencies": {},
+	"devDependencies": {
+		"@types/jest": "^26.0.4",
+		"@types/node": "^14.0.23",
+		"@typescript-eslint/eslint-plugin": "^3.6.1",
+		"@typescript-eslint/parser": "^3.6.1",
+		"eslint": "^7.4.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-import": "^2.22.0",
+		"eslint-plugin-jsdoc": "^29.2.0",
+		"eslint-plugin-prettier": "^3.1.4",
+		"eslint-plugin-unicorn": "^20.1.0",
+		"jest": "^26.1.0",
+		"jest-coverage-badges": "^1.1.2",
+		"prettier": "^2.0.5",
+		"ts-jest": "^26.1.2",
+		"ts-prune": "^0.7.0",
+		"typescript": "^3.9.6"
+	}
+}
