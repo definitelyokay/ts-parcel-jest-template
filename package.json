@@ -1,5 +1,5 @@
 {
-	"name": "@user/package",
+	"name": "@definitelyokay/ts-parcel-jest-template",
 	"version": "1.0.0",
 	"description": "A simple project",
 	"main": "./src/index.ts",
@@ -19,6 +19,10 @@
 	},
 	"author": "Jo Essin",
 	"dependencies": {},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/definitelyokay/ts-parcel-jest-template"
+	},
 	"devDependencies": {
 		"@types/jest": "^26.0.4",
 		"@types/node": "^14.0.23",
