@@ -3,10 +3,18 @@
 		"allowJs": false,
 		"baseUrl": ".",
 		"declaration": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
 		"forceConsistentCasingInFileNames": false,
 		"lib": [
-			"es2015"
+			"es2015",
+			"dom"
 		],
+		"paths": {
+			"~*": [
+				"src/*"
+			]
+		},
 		"module": "commonjs",
 		"moduleResolution": "node",
 		"noImplicitAny": true,
